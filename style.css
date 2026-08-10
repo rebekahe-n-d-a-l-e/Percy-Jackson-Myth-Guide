@@ -4,6 +4,7 @@
             padding: 0;
             background-color: #042e51;
             color: rgb(177, 175, 180);
+            line-height: 1.6;
         }
         .hero-header {
            
@@ -118,7 +119,7 @@ review-details {
     color: #ffd700;
     font-weight: bold;
 }
-.profile-card {
+.profile-card, .review-card {
     background: rgba(15, 23, 42, 0.6);
     border: 1px solid #334155;
     border-radius: 12px;
@@ -126,14 +127,70 @@ review-details {
     display: flex;
     gap: 30px;
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
-    display: flex;
     align-items: flex-start;
     gap: 30px; 
     margin-top: 20px;
+    flex-direction: row
 }
 .profile-content {
   display: flex;
-  align-items: flex-start; 
+  align-items: flex-start;
+  flex-wrap: nowrap; 
   gap: 20px;               
+}
+.table-container {
+    overflow-x: auto; 
+    margin-top: 20px;
+}
+
+.gods-table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #f0f0f0;
+    color: #0a0000;
+}
+
+.gods-table th, .gods-table td {
+    border: 1px solid #0a0000;
+    padding: 12px;
+    text-align: left;
+}
+
+.gods-table th {
+    background-color: #2c3e50;
+    color: #ffffff;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #2c3e50;
+    color: #ffffff;
+    margin-top: 40px;
+}
+@media (max-width: 600px) {
+    .profile-card, .review-card {
+        flex-direction: column; 
+        align-items: center;
+        text-align: center;
+    }
+
+    .profile-img, .review-img {
+        width: 180px;
+    }
+
+    .nav {
+        gap: 10px;
+    }
+}
+
+@media (min-width: 1400px) {
+    main {
+        max-width: 1200px;
+    }
+
+    body {
+        font-size: 1.1rem;
+    }
 }
     
