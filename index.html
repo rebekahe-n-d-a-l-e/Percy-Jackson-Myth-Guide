@@ -1,56 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="A website that explores the connections between Rick Riordan's Percy Jackson series and ancient Greek and Roman mythology.">
-
-<meta name="keywords"content="Percy Jackson, Greek Mythology, Gods Comparison, Book Review,Character Profiles" />
     <title>Percy Jackson Myth Guide</title>
-    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;900&family=Inter:wght@300;400;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <header class="hero-header">
-        <div class="hero-padding">
-        <h1>Percy Jackson Myth Guide</h1>
-        <p>Connecting Fantasy Books to Ancient History</p>
-       </div>
+
+    <header class="hero">
+        <div class="hero-content">
+
+            <img src="Percy.jpg" alt="Percy Jackson" height="300" width="1000" class="hero-image">
+            <h1>Percy Jackson Myth Guide</h1>
+            <p>Connecting Modern Fantasy to Ancient Greek & Roman History</p>
+        </div>
     </header>
 
-    <nav class="nav">
-        <a href="./index.html" class="active">Home</a>
-        <a href="./review.html">Book Review</a>
-        <a href="./gods.html">Gods Comparison</a>
-        <a href="./profile.html">Character Profiles</a>
-    </nav> 
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="./index.html" class="active">Home</a>
+            <a href="./review.html">Book Review</a>
+            <a href="./gods.html">Gods Comparison</a>
+            <a href="./profile.html">Character Profiles</a>
+        </div>
+    </nav>
 
+    <main class="container">
+        <section class="card intro-card">
+            <h2>Welcome, Demigods!</h2>
+            <p>This website explores how Rick Riordan's Percy Jackson series connects to real ancient Greek and Roman
+                mythology. It is merely used as a testing web..</p>
+        </section>
 
-    <main>
-        <section class="intro">
-        <h2>Welcome Demigods!</h2>
-        <p style="font-size: 16px; font-family:inherit;">This website explores how Rick Riordan's Percy Jackson series connects to real ancient Greek and Roman mythology. It is merely used as a testing web.</p>
+        <section class="card quiz-section">
+            <h2>Test Your Knowledge</h2>
+            <p class="subtitle">Click the cards below to reveal the answer:</p>
+
+            <details class="quiz-item">
+                <summary>Which Greek god is Percy Jackson’s father?</summary>
+                <div class="quiz-answer">
+                    <p><strong>Poseidon</strong> — God of the Sea, storms, earthquakes, and horses.</p>
+                </div>
+            </details>
+
+            <details class="quiz-item">
+                <summary>What is the name of Percy's magical pen-sword?</summary>
+                <div class="quiz-answer">
+                    <p><strong>Anaklusmos (Riptide)</strong> — A celestial bronze sword that always returns to Percy's
+                        pocket as a ballpoint pen.</p>
+                </div>
+            </details>
         </section>
-       <section class="questions">
-        <h2>Test Your Knowledge!</h2>
-        <p style="font-size: 16px; font-family:inherit;">Take my quizzes to see how well you know the Percy Jackson series and its mythological roots.</p>
-       <details>
-        <summary>Which Greek god is Percy Jackson’s father?</summary>
-            <p>Percy Jackson’s father is Poseidon, the Greek god of the sea.</p>
-        </details>
-        <details>
-            <summary>What is the name of the magical pen that transforms into a sword for Percy?</summary>
-            <p>The magical pen that transforms into a sword for Percy is called Riptide.</p>
-        </details>
-        </section>
-        <section class="instructions">
-        <p>Want to learn more about the connections between the Percy Jackson series and ancient mythology? Check out my detailed comparisons and reviews!</p>
+
+        <section class="card cta-card">
+            <h2>Ready to Dive Deeper?</h2>
+            <p>Explore detailed comparisons between book lore and real history across archives.</p>
         </section>
     </main>
+
     <footer>
-    <p>&copy; 2026 Rebekah Endale Testing Web. All rights reserved.</p>
+        <p>&copy; Rebekah Endale. Created for Mythological & Web Exploration.</p>
     </footer>
 
-    
 </body>
+
 </html>
