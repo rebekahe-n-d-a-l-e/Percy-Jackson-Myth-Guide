@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Claim Your Cabin - Percy Jackson Myth Guide</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;900&family=Inter&display=swap">
+    <link rel="stylesheet" href="style.css">
+
+
+</head>
+
+<body>
+
+    <nav class="nav">
+        <div class="nav-container">
+            <a href="./index.html">Home</a>
+            <a href="./review.html">Book Review</a>
+            <a href="./gods.html">Gods Comparison</a>
+            <a href="./profile.html">Character Profiles</a>
+            <a href="./cabin.html" class="active">Claim Your Cabin</a>
+        </div>
+    </nav>
+    <main>
+        <section class="form-container">
+            <h2>Claim Your Cabin / Feedback Form</h2>
+            <p>Submit your demigod details or general thoughts on my myth guide!</p>
+            <form action="">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" placeholder="e.g. Percy Jackson" required>
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" placeholder="demigod@camphalfblood.com" required>
+
+                <label for="godly-parent">Favorite God:</label>
+                <select id="godly-parent" name="godly_parent">
+                    <option value="poseidon">Poseidon</option>
+                    <option value="athena">Athena</option>
+                    <option value="zeus">Zeus</option>
+                    <option value="hades">Hades</option>
+                    <option value="other">Other / Undetermined</option>
+                </select>
+
+                <label for="message">Your Message or Myth Feedback:</label>
+                <textarea id="message" name="message" rows="4" placeholder="Write your message here..."
+                    required></textarea>
+
+                <button type="submit" class="submit-btn">Submit to Camp Half-Blood</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2026 Rebekah Endale Testing Web. All rights reserved.</p>
+    </footer>
+
+</body>
+
+</html>
